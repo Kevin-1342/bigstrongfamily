@@ -1,0 +1,113 @@
+# Site settings
+title: 大壮家族
+SEOTitle: 大壮家族 | Big Strong Family
+header-img: img/BackG2.jpg
+email: ketchumfion@gmail.com
+description: "利村的大壮家族，分享五位美少女和一只猪猪的沙雕日常~"
+keyword: "大壮家族"
+url: "https://bigstrongfamily.github.io/"          # your host, for absolute URL
+baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
+github_repo: "https://github.com/KetchumFion" # you code repository
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "利村的大壮家族，分享五位美少女和一只猪猪的沙雕日常~"
+sidebar-avatar: /img/QR.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# SNS settings
+RSS: false
+weibo_username:     5896108037
+# zhihu_username:     
+github_username:    ketchumfion
+# facebook_username:  
+jianshu_username:   411342103
+twitter_username:   1
+
+
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# 评论系统
+# Disqus（https://disqus.com/）
+# disqus_username: qiubaiying
+
+# Gitalk
+gitalk:
+  enable: false    #是否开启Gitalk评论
+  clientID: f2c84e7629bb1446c1a4                            #生成的clientID
+  clientSecret: ca6d6139d1e1b8c43f8b2e19492ddcac8b322d0d    #生成的clientSecret
+  repo: qiubaiying.github.io    #仓库名称
+  owner: qiubaiying    #github用户名
+  admin: qiubaiying
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+
+
+# 统计
+
+# Analytics settings
+# Baidu Analytics
+
+# Google Analytics
+ga_track_id: 'UA-137352017-1'            # Format: UA-xxxxxx-xx
+ga_domain: bigstrongfamily.top               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+
+
+
+
+
+# Featured Tags
+featured-tags: true                    # 是否使用首页标签
+featured-condition-size: 0              # 相同标签数量大于这个数，才会出现在首页
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
+# Friends
+friends: [
+   {
+        title: "Bilibili",
+        href: "https://space.bilibili.com/411342103/"
+    },  {
+        title: "微博",
+        href: "https://www.weibo.com/u/5896108037"
+    },  {
+        title: "Wechat",
+        href: "https://raw.githubusercontent.com/bigstrongfamily/bigstrongfamily.github.io/master/img/QR.jpg"
+    },  {
+        title: "Github",
+        href: "https://github.com/KetchumFion"
+    }
+]
